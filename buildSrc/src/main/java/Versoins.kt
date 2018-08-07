@@ -19,4 +19,5 @@ object Versions {
     val jUnit = "4.12"
     val androiTestRunner = "1.1.0-alpha4"
     val espresso = "3.1.0-alpha4"
+    val ktlint = "0.27.0"
 }
