@@ -11,13 +11,19 @@ object Versions {
     val appCompat = "1.0.0-rc01"
     val kotlin = "1.2.50"
     val retrofit = "2.4.0"
-    val rxJava = "2.1.12"
+    val rxJava = "2.2.0"
     val rxAndroid = "2.0.2"
+    val ktlint = "0.27.0"
+
     val constraintLayout = "1.1.2"
+    val dagger = "2.13"
+    val loggingInterceptor = "(insert latest version)"
+    val javaxInject = "1"
 
     // test
     val jUnit = "4.12"
-    val androiTestRunner = "1.1.0-alpha4"
+    val androidTestRunner = "1.1.0-alpha4"
     val espresso = "3.1.0-alpha4"
-    val ktlint = "0.27.0"
+    val assertJ = "3.10.0"
+    val mockitoKotlin = "2.0.0-RC1"
 }

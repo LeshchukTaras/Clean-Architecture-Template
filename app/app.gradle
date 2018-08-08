@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply from: '../dependencies/base.gradle'
+apply from: '../dependencies/android.gradle'
 
 android {
     compileSdkVersion Versions.compileSdk
@@ -20,31 +22,11 @@ android {
     }
 }
 
-configurations {
-    ktlint
-}
-
 dependencies {
     // modules
     implementation project(ProjectModules.domain)
     implementation project(ProjectModules.data)
 
     // external
-    implementation ProjectDependencies.kotlin
-    implementation ProjectDependencies.appCompat
     implementation ProjectDependencies.constraintLayout
-
-    //test
-    testImplementation TestDependencies.jUnit
-    androidTestImplementation TestDependencies.androiTestRunner
-    androidTestImplementation TestDependencies.espresso
-}
-
-task ktlint(type: JavaExec, group: "verification") {
-    description = "Check Kotlin code style."
-    classpath = configurations.ktlint
-    main = "com.github.shyiko.ktlint.Main"
-    args "--reporter=plain",
-            "--reporter=checkstyle,output=${buildDir}/reports/ktlint/checkstyle.xml",
-            "${projectDir}/**/src/**/*.kt"
 }

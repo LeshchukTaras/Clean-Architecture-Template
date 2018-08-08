@@ -1,0 +1,34 @@
+apply plugin: 'kotlin-android-extensions'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+configurations {
+    ktlint
+}
+
+dependencies {
+    ktlint ProjectDependencies.ktlint
+
+    // kotlin
+    implementation ProjectDependencies.kotlin
+
+    // rxjava 2
+    implementation ProjectDependencies.rxJava
+
+    // testing dependencies
+    testImplementation TestDependencies.jUnit
+    testImplementation TestDependencies.assertJ
+    testImplementation TestDependencies.mockitoKotlin
+}
+
+task ktlint(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code style."
+    classpath = configurations.ktlint
+    main = "com.github.shyiko.ktlint.Main"
+    args "--reporter=plain",
+            "--reporter=checkstyle,output=${buildDir}/reports/ktlint/checkstyle.xml",
+            "${projectDir}/**/src/**/*.kt"
+}

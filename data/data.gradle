@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply from: '../dependencies/base.gradle'
+apply from: '../dependencies/android.gradle'
 
 android {
     compileSdkVersion Versions.compileSdk
@@ -18,15 +20,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
-    //external
-    implementation ProjectDependencies.appCompat
 
-    // test
-    testImplementation TestDependencies.jUnit
-    androidTestImplementation TestDependencies.androiTestRunner
-    androidTestImplementation TestDependencies.espresso
 }
