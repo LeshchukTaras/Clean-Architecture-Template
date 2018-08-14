@@ -1,6 +1,8 @@
 package com.example.taras.cleanarchitecturetemplate.di
 
 import com.example.taras.cleanarchitecturetemplate.App
+import com.example.taras.cleanarchitecturetemplate.MainActivity
+import com.taras.data.di.NetworkModule
 import dagger.Component
 import javax.inject.Singleton
 
@@ -12,4 +14,6 @@ import javax.inject.Singleton
     InteractorsModule::class])
 interface AppComponent {
     fun inject(app: App)
+
+    fun inject(mainActivity: MainActivity)
 }
