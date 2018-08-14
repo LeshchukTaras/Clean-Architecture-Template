@@ -12,12 +12,17 @@ dependencies {
 //    implementation ProjectDependencies.appCompat // FIXME :: configuring dependency error related to daggerAndroidSupport dependency
     implementation ProjectDependencies.constraintLayout
 
-
     // dagger
     implementation ProjectDependencies.daggerAndroid
     implementation ProjectDependencies.daggerAndroidSupport
     kapt ProjectDependencies.daggerAnnotationProcessor
     kapt ProjectDependencies.daggerCompiler
+
+    // retrofit dependencies
+    implementation ProjectDependencies.retrofit // FIXME :: should use only in data module
+    implementation ProjectDependencies.rxJava2Adapter
+    implementation ProjectDependencies.gson
+    implementation ProjectDependencies.loggingInterceptor
 
     // testing dependencies
     androidTestImplementation TestDependencies.androidTestRunner

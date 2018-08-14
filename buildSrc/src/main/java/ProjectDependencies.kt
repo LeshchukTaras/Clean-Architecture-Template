@@ -3,7 +3,7 @@ object ProjectDependencies {
     val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
 
-    val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jre7:${Versions.kotlin}"
+    val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     val ktlint = "com.github.shyiko:ktlint:${Versions.ktlint}"
 
     val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
@@ -13,6 +13,7 @@ object ProjectDependencies {
     val rxJava2Adapter = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
     val gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+
 
     val daggerAndroid = "com.google.dagger:dagger-android:${Versions.dagger}"
     val daggerAndroidSupport = "com.google.dagger:dagger-android-support:${Versions.dagger}"

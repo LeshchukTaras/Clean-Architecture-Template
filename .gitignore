@@ -9,7 +9,4 @@
 /local.properties
 /gradlew
 /gradlew.bat
-src/main/com.example.taras.cleanarchitecturetemplate/
-src/main/java/
-buildSrc/build/
-data/src/main/java/
+/buildSrc/build
