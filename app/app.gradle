@@ -26,7 +26,4 @@ dependencies {
     // modules
     implementation project(ProjectModules.domain)
     implementation project(ProjectModules.data)
-
-    // external
-    implementation ProjectDependencies.constraintLayout
 }

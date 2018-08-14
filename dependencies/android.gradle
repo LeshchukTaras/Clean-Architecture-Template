@@ -9,7 +9,9 @@ repositories {
 
 dependencies {
     implementation ProjectDependencies.rxAndroid
-    implementation ProjectDependencies.appCompat
+//    implementation ProjectDependencies.appCompat // FIXME :: configuring dependency error related to daggerAndroidSupport dependency
+    implementation ProjectDependencies.constraintLayout
+
 
     // dagger
     implementation ProjectDependencies.daggerAndroid
