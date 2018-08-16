@@ -1,6 +1,6 @@
 package com.taras.data.network.interceptors
 
-import com.taras.data.AppConst
+import com.taras.data.utils.AppConst
 import okhttp3.Interceptor
 import okhttp3.Response
 

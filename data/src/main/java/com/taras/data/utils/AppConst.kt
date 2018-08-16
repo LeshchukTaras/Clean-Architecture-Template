@@ -1,4 +1,4 @@
-package com.taras.data
+package com.taras.data.utils
 
 class AppConst {
 

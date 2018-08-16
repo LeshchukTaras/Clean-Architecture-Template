@@ -13,6 +13,7 @@ object ProjectDependencies {
     val rxJava2Adapter = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
     val gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
     val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+    val okHttp = "com.squareup.okhttp3:okhttp:${Versions.loggingInterceptor}"
 
 
     val daggerAndroid = "com.google.dagger:dagger-android:${Versions.dagger}"

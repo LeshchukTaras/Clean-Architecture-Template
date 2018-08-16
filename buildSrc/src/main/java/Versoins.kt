@@ -17,7 +17,7 @@ object Versions {
 
     val constraintLayout = "1.1.2"
     val dagger = "2.13"
-    val loggingInterceptor = "3.0.0-RC1"
+    val loggingInterceptor = "3.4.1"
     val javaxInject = "1"
 
     // test

@@ -5,6 +5,8 @@ import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 import com.example.taras.cleanarchitecturetemplate.App
+import com.taras.data.rx.RxSchedulersImpl
+import com.taras.domain.rx.RxSchedulers
 
 @Module
 class AppModule(val app: App) {
@@ -16,4 +18,7 @@ class AppModule(val app: App) {
     @Provides
     @Singleton
     fun provideAppContext(app: App): Context = app
+
+    @Provides
+    fun provideRxSchedulers(): RxSchedulers = RxSchedulersImpl()
 }

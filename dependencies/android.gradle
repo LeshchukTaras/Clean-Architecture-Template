@@ -23,6 +23,7 @@ dependencies {
     implementation ProjectDependencies.rxJava2Adapter
     implementation ProjectDependencies.gson
     implementation ProjectDependencies.loggingInterceptor
+    implementation ProjectDependencies.okHttp
 
     // testing dependencies
     androidTestImplementation TestDependencies.androidTestRunner
