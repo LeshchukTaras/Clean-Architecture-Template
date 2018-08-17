@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 
 data class StatusModel(
         @SerializedName("statusSeverity")
-        val severityLevel: String,
+        val severityLevel: Int,
         @SerializedName("statusSeverityDescription")
         val severityLevelDescription: String
 )

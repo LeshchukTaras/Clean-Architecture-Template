@@ -3,6 +3,10 @@ object ProjectDependencies {
     val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
 
+    val recyclerView = "com.android.support:recyclerview-v7:${Versions.supportLibrary}"
+    val supportAppCompat = "com.android.support:appcompat-v7:${Versions.supportLibrary}"
+    val supportDesign = "com.android.support:design:${Versions.supportLibrary}"
+
     val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     val ktlint = "com.github.shyiko:ktlint:${Versions.ktlint}"
 

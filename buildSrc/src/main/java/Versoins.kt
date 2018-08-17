@@ -10,6 +10,7 @@ object Versions {
 
     val appCompat = "1.0.0-rc01"
     val kotlin = "1.2.50"
+    val supportLibrary = "27.1.1"
     val retrofit = "2.4.0"
     val rxJava = "2.2.0"
     val rxAndroid = "2.0.2"
@@ -25,5 +26,7 @@ object Versions {
     val androidTestRunner = "1.1.0-alpha4"
     val espresso = "3.1.0-alpha4"
     val assertJ = "3.10.0"
+    val mockito = "2.18.0"
     val mockitoKotlin = "2.0.0-RC1"
+    val kakao = "1.4.0"
 }

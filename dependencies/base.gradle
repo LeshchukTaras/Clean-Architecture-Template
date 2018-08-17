@@ -21,6 +21,7 @@ dependencies {
     // testing dependencies
     testImplementation TestDependencies.jUnit
     testImplementation TestDependencies.assertJ
+    testImplementation TestDependencies.mockito
     testImplementation TestDependencies.mockitoKotlin
 }
 

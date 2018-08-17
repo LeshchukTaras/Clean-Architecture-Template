@@ -5,7 +5,7 @@ import com.taras.domain.repository.StatusRepository
 import io.reactivex.Observable
 import javax.inject.Inject
 
-class GetLineStatusInteractor @Inject constructor(
+class GetLinesStatusInteractor @Inject constructor(
         private val statusRepository: StatusRepository,
         private val rxSchedulers: RxSchedulers
 ) : NoArgIterator<List<LineStatus>> {

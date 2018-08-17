@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Clean-Architecture-Template</string>
+    <string name="line_name_test">Line Name</string>
+    <string name="line_status_test">Line status</string>
+    <string name="line_badge_content_description">Line Badge</string>
+    <string name="error_message">There was an error, please try again.</string>
 </resources>

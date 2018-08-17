@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="line_name_text_size">16sp</dimen>
+    <dimen name="item_line_image_size">32dp</dimen>
+    <dimen name="severity_level_view_width">4dp</dimen>
+    <dimen name="padding_big">12dp</dimen>
+</resources>

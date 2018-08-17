@@ -4,7 +4,10 @@ apply plugin: 'kotlin-kapt'
 
 repositories {
     jcenter()
-    mavenCentral()
+}
+
+android {
+    kapt { generateStubs = true }
 }
 
 dependencies {
@@ -28,4 +31,5 @@ dependencies {
     // testing dependencies
     androidTestImplementation TestDependencies.androidTestRunner
     androidTestImplementation TestDependencies.espresso
+    androidTestImplementation TestDependencies.kakao
 }

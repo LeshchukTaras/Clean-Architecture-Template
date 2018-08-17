@@ -26,4 +26,9 @@ dependencies {
     // modules
     implementation project(ProjectModules.domain)
     implementation project(ProjectModules.data)
+
+    // external dependencies
+    implementation ProjectDependencies.supportAppCompat
+    implementation ProjectDependencies.supportDesign
+    implementation ProjectDependencies.recyclerView
 }

@@ -5,7 +5,7 @@ import com.nhaarman.mockitokotlin2.verify
 import com.nhaarman.mockitokotlin2.whenever
 import com.taras.domain.model.LineStatus
 import com.taras.domain.repository.StatusRepository
-import com.taras.domain.rx.GetLineStatusInteractor
+import com.taras.domain.rx.GetLinesStatusInteractor
 import io.reactivex.Single
 import org.junit.Before
 import org.junit.Test
@@ -14,12 +14,12 @@ import org.mockito.MockitoAnnotations
 class GetLinesStatusInteractorTest {
 
     private val mockStatusRepository = mock<StatusRepository>()
-    private lateinit var getLinesStatusInteractor: GetLineStatusInteractor
+    private lateinit var mGetLinesStatusInteractor: GetLinesStatusInteractor
 
     @Before
     fun setUp() {
         MockitoAnnotations.initMocks(this)
-        getLinesStatusInteractor = GetLineStatusInteractor(
+        mGetLinesStatusInteractor = GetLinesStatusInteractor(
                 mockStatusRepository,
                 TestRxSchedulersImpl()
         )
@@ -33,7 +33,7 @@ class GetLinesStatusInteractorTest {
                 .thenReturn(Single.error(throwable))
 
         // when
-        val testObserver = getLinesStatusInteractor.execute().test()
+        val testObserver = mGetLinesStatusInteractor.execute().test()
 
         // then
         testObserver.assertError(throwable)
@@ -47,7 +47,7 @@ class GetLinesStatusInteractorTest {
                 .thenReturn(Single.just(mutableListOf(getLineStatus())))
 
         // when
-        val testObserver = getLinesStatusInteractor.execute().test()
+        val testObserver = mGetLinesStatusInteractor.execute().test()
 
         // then
         verify(mockStatusRepository).getLinesStatus()
